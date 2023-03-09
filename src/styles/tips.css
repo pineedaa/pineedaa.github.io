@@ -21,3 +21,32 @@
   --text-description-color: #303030;
   --button: url('../images/dark-mode-button.svg');
 }
+
+main {
+  margin-top: 8vh;
+  padding-top: 2em;
+}
+
+div.left {
+  display: flex;
+  justify-content: center;
+  float: left;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+}
+
+div.left img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+}
+
+div.right {
+  float: right;
+  width: 70%;
+  margin-right: 5%;
+}
