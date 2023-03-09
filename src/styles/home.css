@@ -14,7 +14,7 @@
 
 main {
   min-height: 100%;
-  margin-top: calc(100px + 2em);
+  margin-top: calc(8vh + 2em);
   margin-bottom: 2em;
 }
 
