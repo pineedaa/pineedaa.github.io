@@ -30,6 +30,7 @@ body {
 
 .container {
   max-width: 1200px;
+  height: 100px;
   margin: 0 auto;
 }
 
@@ -61,7 +62,7 @@ body {
 
 .nav a {
   color: var(--nav-text-color);
-  font-size: 2vh;
+  font-size: 1.8vh;
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
