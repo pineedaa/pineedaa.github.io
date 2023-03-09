@@ -12,6 +12,10 @@
   --text-color: #222;
 }
 
+body {
+  background-color: #000;
+}
+
 main {
   min-height: 100%;
   margin-top: calc(8vh + 2em);
@@ -47,7 +51,7 @@ h1.tft {
   font-family: "Marker";
   font-size: 3em;
   text-align: center;
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 
 p.description {
@@ -95,9 +99,4 @@ p.description {
   background-color: #eaeaea;
   padding: 120px 80px;
   height: 100%;
-}
-
-body {
-  background-color: #000;
-  font-family: Arial;
 }
