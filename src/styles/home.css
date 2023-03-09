@@ -66,7 +66,7 @@ p.description {
   z-index: -1;
 }
 
-.banner__title {
+.banner_title {
   color: #fff;
   font-size: 100px;
   font-weight: 700;
@@ -76,13 +76,12 @@ p.description {
   text-transform: uppercase;
 }
 
-.banner__stroked-title {
+.banner_stroked-title {
   color: transparent;
   -webkit-text-stroke: 2px white;
-  text-stroke: 2px white;
 }
 
-.banner__image {
+.banner_image {
   border-radius: 20px;
   position: fixed;
   transform: rotate(-15deg);
