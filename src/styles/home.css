@@ -15,7 +15,6 @@
 main {
   min-height: 100%;
   margin-top: calc(8vh + 2em);
-  margin-bottom: 2em;
 }
 
 .gallery {
@@ -56,4 +55,50 @@ p.description {
   text-align: justify;
   color: var(--text-color);
   font-size: 1.15em;
+}
+
+.banner {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
+}
+
+.banner__title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  padding: 0 20px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner__stroked-title {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-stroke: 2px white;
+}
+
+.banner__image {
+  border-radius: 20px;
+  position: fixed;
+  transform: rotate(-15deg);
+  width: 450px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  float: bottom;
+  background-color: #eaeaea;
+  padding: 120px 80px;
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  font-family: Arial;
 }
