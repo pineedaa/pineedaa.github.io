@@ -24,7 +24,7 @@
 
 main {
   min-height: 100%;
-  margin-top: 6em;
+  margin-top: calc(100px + 2em);
   margin-bottom: 2em;
 }
 
@@ -44,7 +44,7 @@ h1 {
   min-width: 400px;
   max-width: 1170px;
   width: 30%;
-  margin: 10vh 25vw;
+  margin-left: 25vw;
   cursor: pointer;
 }
 

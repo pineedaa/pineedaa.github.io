@@ -14,7 +14,7 @@
 
 main {
   min-height: 100%;
-  margin-top: 10em;
+  margin-top: calc(100px + 2em);
   margin-bottom: 2em;
 }
 
@@ -48,7 +48,6 @@ h1.tft {
   font-family: "Marker";
   font-size: 3em;
   text-align: center;
-  margin-top: .8em;
   margin-bottom: .8em;
 }
 
