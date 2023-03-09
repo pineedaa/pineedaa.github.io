@@ -11,6 +11,7 @@
 :root {
   --shadow-color: #c0c0c0;
   --text-color: #202020;
+  --light-text-color: #808080;
   --nav-bar-color: #303030;
   --nav-text-color: #f9f9f9;
   --nav-hover-color: #c84b31;
@@ -19,4 +20,108 @@
   --body-background-color: #f9f9f9;
   --intro-color: #202020;
   --text-description-color: #303030;
+}
+
+main {
+  min-height: 100%;
+  margin-top: 6em;
+  margin-bottom: 2em;
+}
+
+body {
+  background-color: var(--body-background-color);
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 3vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  float: top;
+  min-width: 400px;
+  max-width: 1170px;
+  width: 30%;
+  margin: 10vh 25vw;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 1.2em;
+  color: var(--light-text-color);
+  position: relative;
+  margin-top: 2em;
+}
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(25% + 3em); /* establece la posición vertical debajo de .card */
+  max-width: 1200px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 6em;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  margin: auto;
+  max-width: 1600px;
+}
+
+.element {
+  flex-basis: calc(
+    100% / 2 - 6em
+  ); /* dividir el ancho del contenedor entre 3 */
+  margin: 3em;
+}
+
+.element img {
+  width: 100%;
+}
+
+.description {
+  text-align: justify;
+  margin-top: 5px;
 }
