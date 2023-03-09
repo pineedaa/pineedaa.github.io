@@ -90,21 +90,19 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: calc(25% + 3em); /* establece la posición vertical debajo de .card */
+  float: top;
   max-width: 1200px;
   width: 100%;
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: 6em;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: top;
   margin: auto;
   max-width: 1600px;
