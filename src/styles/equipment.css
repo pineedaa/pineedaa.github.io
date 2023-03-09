@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Marker;
+  src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: Urbanist;
+  src: url(../fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+:root {
+  --shadow-color: #c0c0c0;
+  --text-color: #202020;
+  --nav-bar-color: #303030;
+  --nav-text-color: #f9f9f9;
+  --nav-hover-color: #c84b31;
+  --social-hover-color: #c84b31;
+  --social-text-color: #f9f9f9;
+  --body-background-color: #f9f9f9;
+  --intro-color: #202020;
+  --text-description-color: #303030;
+}
