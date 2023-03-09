@@ -40,10 +40,12 @@ body {
   left: 0;
   right: 0;
   transition: all 0.3s ease-in-out;
+  z-index: 999; /* To make the content of the page not being on the nav bar */
 }
 
 .nav .container {
   display: flex;
+  float: top;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
