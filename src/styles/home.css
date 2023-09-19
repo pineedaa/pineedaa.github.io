@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Marker;
+  src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: Urbanist;
+  src: url(../fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+:root {
+  --text-color: #222;
+}
+
+body {
+  background-color: #000;
+}
+
+main {
+  min-height: 100vh;
+  margin-top: calc(8vh + 2em);
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.element {
+  flex: 1;
+  margin: 1em;
+}
+
+.element img {
+  width: 100%;
+}
+
+.element p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+h1.tft {
+  font-family: "Marker";
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+p.description {
+  font-family: "Urbanist";
+  text-align: justify;
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+.banner {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
+}
+
+.banner_title {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  padding: 0 20px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner_stroked-title {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+.banner_image {
+  border-radius: 20px;
+  position: fixed;
+  width: 450px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  float: bottom;
+  background-color: #fafafa;
+  padding: 120px 80px;
+  height: 100%;
+}

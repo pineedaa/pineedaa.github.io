@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="src/styles/nav-footer.css" />
+  <link rel="stylesheet" href="src/styles/tips.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- For the mouse scroll icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Consejos | Tiger Fighters Team</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <h1><a href="index.html" class="logo">TFT</a></h1>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#" class="current">Consejos</a></li>
+        <li><a href="benefits.html">Beneficios</a></li>
+        <li><a href="history.html">Historia</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script src="src/scripts/nav-bar.js"></script>
+
+  <main>
+    <div class="introduction">
+      <div class="inner">
+        <p class="introduction">
+          Tanto si tienes experiencia como si eres nuevo en el Muay Thai, estos consejos pueden ayudarte a mejorar tus
+          habilidades. El Muay Thai es desafiante pero gratificante, y en este post te daremos consejos esenciales para
+          ayudarte a mejorar tu rendimiento.
+        </p>
+        <i class="material-icons deslizar">mouse</i>
+      </div>
+    </div>
+
+    <div class="tip-container">
+      <div class="tip">
+        <h2 id="tip1" class="tip" onclick="toggleParagraph('1')">Trabaja en tu técnica</h2>
+        <p class="tip" id="paragraph1" style="display: none">
+          La técnica es esencial en el Muay Thai, así que asegúrate de trabajarla constantemente. Practica tus
+          movimientos, asegúrate de que tus golpes y patadas son precisos y mantén una buena postura.
+        </p>
+      </div>
+
+      <div class="tip">
+        <h2 id="tip2" class="tip" onclick="toggleParagraph('2')">Mantente en forma</h2>
+        <p class="tip" id="paragraph2" style="display: none">
+          Para ser un buen luchador de Muay Thai, necesitas estar en buena forma física. Intenta hacer ejercicio con
+          regularidad, ya sea correr, levantar pesas o cualquier otra actividad física que te ayude a mantenerte en
+          forma.
+        </p>
+      </div>
+
+      <div class="tip">
+        <h2 id="tip3" class="tip" onclick="toggleParagraph('3')">Escucha a tu cuerpo</h2>
+        <p class="tip" id="paragraph3" style="display: none">
+          Es importante escuchar a tu cuerpo cuando estás entrenando o compitiendo en Muay Thai. Si sientes dolor o
+          molestias, tómate un descanso para evitar lesiones más graves.
+        </p>
+      </div>
+
+      <div class="tip">
+        <h2 id="tip4" class="tip" onclick="toggleParagraph('4')">Aprende a respirar</h2>
+        <p class="tip" id="paragraph4" style="display: none">
+          Breathing is essential in Muay Thai, as it helps you control your movements and maintain endurance. Practice
+          deep abdominal breathing to improve your lung capacity.
+        </p>
+      </div>
+
+      <div class="tip">
+        <h2 id="tip5" class="tip" onclick="toggleParagraph('5')">Estira después de cada entrenamiento</h2>
+        <p class="tip" id="paragraph5" style="display: none">
+          Los estiramientos son importantes después de cada entrenamiento para prevenir lesiones y reducir las agujetas.
+          Tómate tu tiempo para estirar correctamente después de cada sesión de entrenamiento.
+        </p>
+      </div>
+
+      <div id="tip6" class="tip">
+        <h2 class="tip" onclick="toggleParagraph('6')">Cuida tu alimentación</h2>
+        <p class="tip" id="paragraph6" style="display: none">
+          La nutrición es importante para mantener una buena salud y rendimiento en Muay Thai. Intenta comer sano y
+          equilibrado, y asegúrate de hidratarte correctamente antes, durante y después del entrenamiento y la
+          competición.
+        </p>
+      </div>
+
+      <div id="tip7" class="tip">
+        <h2 class="tip" onclick="toggleParagraph('7')">Trabaja en tu mentalidad</h2>
+        <p class="tip" id="paragraph7" style="display: none">
+          El éxito en el Muay Thai también depende de tu mentalidad. Aprende a concentrarte y a mantener la calma bajo
+          presión, e intenta ser positivo y estar motivado en todo momento.
+        </p>
+      </div>
+
+      <div class="tip">
+        <h2 id="tip8" class="tip" onclick="toggleParagraph('8')">Encuentra un buen entrenador</h2>
+        <p class="tip" id="paragraph8" style="display: none">
+          Un buen entrenador puede ayudarte a mejorar tu técnica y a prepararte adecuadamente para la competición. Busca
+          un entrenador experimentado y comprometido que pueda ayudarte a alcanzar tus objetivos en Muay Thai.
+        </p>
+      </div>
+    </div>
+  </main>
+  <script src="src/scripts/toggle-paragraph.js"></script>
+
+  <div class="footer">
+    <div class="container">
+      <h1><a href="index.html" class="logo">TFT</a></h1>
+      <ul>
+        <li><a class="media fa fa-facebook" href="https://www.instagram.com/tiger_fighters_team/"></a></li>
+        <li><a class="media fa fa-instagram"
+            href="https://www.facebook.com/people/Tiger-Fighters-Team/100057287236638/"></a>
+        </li>
+        <li><a href="#">&copy; Tiger Fighters Team</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

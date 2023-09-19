@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Urbanist;
+  src: url(../fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Marker;
+  src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+:root {
+  --shadow-color: #c0c0c0;
+  --text-color: #202020;
+  --nav-bar-color: #303030;
+  --introduction-color: #303030cc;
+  --nav-text-color: #f9f9f9;
+  --text-color: #303030;
+  --background-color: #f9f9f9;
+  --nav-hover-color: #c84b31;
+  --social-hover-color: #c84b31;
+  --social-text-color: #202020;
+  --body-background-color: #f9f9f9;
+  --intro-color: #202020;
+  --text-description-color: #303030;
+  --button: url('../images/dark-mode-button.svg');
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8vh;
+  min-height: 100vh;
+  font-family: "Urbanist";
+}
+
+div.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../images/punch.jpg");
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+div.inner {
+  width: 100%;
+  padding: 0 30%;
+  padding-top: 15%;
+  text-align: justify;
+}
+
+p.introduction {
+  color: var(--nav-text-color);
+  padding: 1.6em;
+  font-size: 1.6rem;
+  border-radius: 15px;
+  background-color: var(--introduction-color);
+}
+
+div.tip {
+  display: block;
+  margin: .5rem;
+}
+
+h2.tip {
+  display: inline;
+  font-size: 2em;
+  cursor: pointer;
+  padding: .2em;
+  color: #000143;
+}
+
+h2.tip:hover {
+  color: var(--nav-hover-color);
+}
+
+h2.selected {
+  display: inline;
+  font-size: 2em;
+  padding: .2em;
+  color: var(--nav-hover-color);
+  cursor: pointer;
+}
+
+p.tip {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  max-width: 60%;
+  text-align: justify;
+}
+
+.tip-container {
+  width: 100%;
+  padding: 20px 20%;
+  background-color: var(--background-color);
+}
+
+.click {
+  color: var(--nav-text-color);
+}
+
+.deslizar {
+  color: var(--nav-text-color);
+
+  padding-top: 20px;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Centrar horizontalmente */
+
+  animation-duration: 2s;
+  animation-name: deslizar_abajo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes deslizar_abajo {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

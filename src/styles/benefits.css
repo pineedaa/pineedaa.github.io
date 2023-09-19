@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Urbanist;
+  src: url(../fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Marker;
+  src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+:root {
+  --shadow-color: #c0c0c0;
+  --text-color: #202020;
+  --light-text-color: #808080;
+  --nav-bar-color: #303030;
+  --nav-text-color: #f9f9f9;
+  --nav-hover-color: #c84b31;
+  --social-hover-color: #c84b31;
+  --social-text-color: #f9f9f9;
+  --body-background-color: #f9f9f9;
+  --intro-color: #202020;
+  --text-description-color: #303030;
+}
+
+main {
+  min-height: 100vh;
+  margin-top: calc(8vh + 2em);
+  margin-bottom: 2em;
+}
+
+body {
+  background-color: var(--body-background-color);
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 3vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  float: top;
+  min-width: 400px;
+  max-width: 1170px;
+  width: 30%;
+  margin-left: 25vw;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 1.6em;
+  color: var(--light-text-color);
+  position: relative;
+  margin-top: 2em;
+}
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 10em;
+}
+
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: top;
+  max-width: 1200px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.element {
+  flex: 1;
+  margin: 1em;
+}
+
+.element img {
+  width: 100%;
+}
+
+.description {
+  font-size: 1.6em;
+  text-align: justify;
+  margin-top: .7em;
+  font-family: "Urbanist";
+}

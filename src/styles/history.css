@@ -1,0 +1,54 @@
+@font-face {
+  font-family: Marker;
+  src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+  font-family: Urbanist;
+  src: url(../fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+:root {
+  --shadow-color: #c0c0c0;
+  --text-color: #202020;
+  --nav-bar-color: #303030;
+  --nav-text-color: #f9f9f9;
+  --nav-hover-color: #c84b31;
+  --social-hover-color: #c84b31;
+  --social-text-color: #f9f9f9;
+  --body-background-color: #f9f9f9;
+  --intro-color: #202020;
+  --text-description-color: #303030;
+}
+
+main {
+  font-family: "Urbanist";
+  min-height: 100vh;
+  margin-top: 8vh;
+  padding-top: 5em;
+}
+
+main .container {
+  max-width: 1000px;
+  height: 100%;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main p {
+  text-align: justify;
+  font-size: 1.6em;
+  padding: .6em 0;
+  color: var(--nav-bar-color);
+}
+
+main h1 {
+  font-size: 2em;
+  color: var(--text-color);
+}
+
+main img {
+  margin-bottom: 3em;
+}
